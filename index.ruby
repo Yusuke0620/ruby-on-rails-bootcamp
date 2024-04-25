@@ -68,3 +68,50 @@ puts s.sort.inspect
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ハッシュ
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+numbers = [1, 2, 3, 4, 5]
+numbers.each do |number|
+  puts number
+end
+
+colors = ["red", "green", "blue"]
+colors.each do |color|
+  puts color
+end
+
+
+
+scores = {luke: 100, jack: 90, robert: 70}
+scores.each do |k, v|
+  # puts k
+  if v >= 80
+    puts v
+  end
+end
+
+
+5.times do |i|
+  puts "#{i}: Hello"
+end
+
+i = 0
+while i < 10 do
+  puts i
+  i += 1
+end
+
+
+class Car
+  def initialize(name)
+    @name = name
+  end
+
+  def hello 
+    puts "Hello! I am #{@name}."
+  end
+end
+
+car1 = Car.new("Nanaho")
+car1.hello
+
+
